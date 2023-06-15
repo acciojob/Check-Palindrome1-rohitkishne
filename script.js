@@ -4,7 +4,7 @@ function palindrome(str){
 	let newStr = "";
 	for(let j=str.length-1; j>=0; j--)
 		{
-			newStr += str[j];
+			newStr += str[j].toLowerCase();
 		}
 	return str === newStr ? true : false;
 }
