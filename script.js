@@ -1,14 +1,11 @@
 // complete the given function
 
 function palindrome(str){
-	let i=0;
-	for(let j=str.length; j>=0; j--)
+	let newStr = "";
+	for(let j=str.length-1; j>=0; j--)
 		{
-			if(str[i] !== str[j])
-			{
-				return false;
-			}
+			newStr += str[j];
 		}
-	return true;
+	return str === newStr ? true : false;
 }
 module.exports = palindrome
